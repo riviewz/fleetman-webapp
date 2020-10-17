@@ -12,7 +12,7 @@
 
   tasks:
 
-      - name: Setup security group
+    - name: Setup security group
       ec2_group:
         name: http-server
         description: Security rules for HTTP Server
