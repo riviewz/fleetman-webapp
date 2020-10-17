@@ -9,13 +9,11 @@
      keypair_name: ssh_key
      instance_type: t2.micro
      image_name: ami-03cfb5e1fb4fac428
-     #live_ip_address: <ip-address of webserver>
-  
+
   tasks:
     -name: Setup variables for later
      set_fact:
-       region: "{{ region }}"
-       #live_ip_address: "{{ live_ip_address }}"
+        region: "{{ region }}"
    
     - name: Setup security group
       ec2_group:
