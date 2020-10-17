@@ -168,8 +168,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!--  For standalone JAR file <configuration><executable>false</executable></configuration> -->
 				<configuration>
+					<executable>true</executable>
+				</configuration>					
                 	<mainClass>com.virtualpairprogrammers.TomcatWARApplication</mainClass>
             	</configuration>
 			</plugin>
