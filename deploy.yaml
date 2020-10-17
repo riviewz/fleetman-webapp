@@ -11,11 +11,7 @@
      image_name: ami-03cfb5e1fb4fac428
 
   tasks:
-    -name: Setup variables for later
-     set_fact:
-        region: "{{ region }}"
-   
-    - name: Setup security group
+      - name: Setup security group
       ec2_group:
         name: http-server
         description: Security rules for HTTP Server
